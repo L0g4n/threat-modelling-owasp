@@ -102,16 +102,18 @@
                 "height": 80
               },
               "position": {
-                "x": 316,
-                "y": 489
+                "x": 329,
+                "y": 487
               },
               "angle": 0,
               "id": "1ae2bd24-c3dd-4029-acec-749e76485be5",
               "z": 4,
               "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "Out of our control.",
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isOutOfScope"
                 },
                 "text": {
                   "text": "Browser"
@@ -229,16 +231,25 @@
                 }
               ],
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Man in the middle attack",
+                  "type": "Information disclosure",
+                  "mitigation": "Connection from web server to application server should be encrypted, since these are separate systems."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -402,6 +413,89 @@
               ],
               "id": "126134c6-0af1-4f0d-968c-3f86db2178ac",
               "z": 12,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 49,
+                "y": 490
+              },
+              "angle": 0,
+              "id": "55064d4e-6b9d-4fc3-bd34-fd5c990c86a6",
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Admin"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "55064d4e-6b9d-4fc3-bd34-fd5c990c86a6"
+              },
+              "target": {
+                "id": "85b42b0e-e6ec-4fe0-917a-c9778735733f"
+              },
+              "vertices": [],
+              "id": "6e611550-8c05-4ba2-bd26-c2bb9c8bd743",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Maintenance",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 14,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 10,
+                "y": 485
+              },
+              "target": {
+                "x": 266,
+                "y": 512
+              },
+              "vertices": [
+                {
+                  "x": 142,
+                  "y": 430
+                }
+              ],
+              "id": "d7dde80d-1280-4ed8-9ea8-17dec10500de",
+              "z": 15,
               "attrs": {}
             }
           ]
