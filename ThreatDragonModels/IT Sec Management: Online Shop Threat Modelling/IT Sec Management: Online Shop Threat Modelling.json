@@ -242,6 +242,13 @@
                   "title": "Man in the middle attack",
                   "type": "Information disclosure",
                   "mitigation": "Connection from web server to application server should be encrypted, since these are separate systems."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Encryption should be HTTPS",
+                  "type": "Tampering",
+                  "mitigation": "Use HTTPS!"
                 }
               ],
               "attrs": {
@@ -286,16 +293,36 @@
                 }
               ],
               "z": 8,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "DDOS"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Phished User Data",
+                  "type": "Spoofing"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "title": "Fake Payment Details"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -422,22 +449,38 @@
                 "height": 80
               },
               "position": {
-                "x": 49,
+                "x": 48,
                 "y": 490
               },
               "angle": 0,
               "id": "55064d4e-6b9d-4fc3-bd34-fd5c990c86a6",
               "z": 13,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Backups of systems could get lost",
+                  "type": "Denial of service",
+                  "description": "This includes stuff like:\n- web server configurations\n- TLS certificates\n- application server configuration\n- Database dumps",
+                  "mitigation": "Backups!"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Credentials could get stolen",
+                  "type": "Information disclosure"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Admin"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
