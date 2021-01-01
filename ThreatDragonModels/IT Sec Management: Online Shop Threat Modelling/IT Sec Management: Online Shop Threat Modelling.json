@@ -8,7 +8,44 @@
       {
         "title": "Threat Modelling",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 109,
+                "y": 81
+              },
+              "angle": 0,
+              "id": "85b42b0e-e6ec-4fe0-917a-c9778735733f",
+              "z": 1,
+              "hasOpenThreats": false,
+              "privilegeLevel": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Application\nServer"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       }
     ]
   }
