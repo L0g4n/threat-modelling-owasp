@@ -257,6 +257,14 @@
                   "title": "Encryption should be HTTPS",
                   "type": "Tampering",
                   "mitigation": "Use HTTPS!"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "title": "DoS",
+                  "description": "Resource Exhaustion by DoS.",
+                  "mitigation": "Load Balancing."
                 }
               ],
               "attrs": {
