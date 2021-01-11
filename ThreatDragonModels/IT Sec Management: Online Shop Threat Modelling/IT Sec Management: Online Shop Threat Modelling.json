@@ -24,19 +24,33 @@
               "angle": 0,
               "id": "85b42b0e-e6ec-4fe0-917a-c9778735733f",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "privilegeLevel": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "title": "CSRF"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "title": "XSS"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Application\nServer"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -176,6 +190,10 @@
                 {
                   "x": 43,
                   "y": 236
+                },
+                {
+                  "x": 41,
+                  "y": 224
                 },
                 {
                   "x": 32,
