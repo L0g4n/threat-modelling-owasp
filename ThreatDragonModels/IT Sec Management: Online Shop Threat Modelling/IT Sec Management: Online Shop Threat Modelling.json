@@ -18,8 +18,8 @@
                 "height": 100
               },
               "position": {
-                "x": 88,
-                "y": 239
+                "x": 85,
+                "y": 217
               },
               "angle": 0,
               "id": "85b42b0e-e6ec-4fe0-917a-c9778735733f",
@@ -89,8 +89,8 @@
                 "height": 100
               },
               "position": {
-                "x": 337,
-                "y": 229
+                "x": 492,
+                "y": 80
               },
               "angle": 0,
               "id": "89d8d5f1-c90d-4b4a-8118-13b5efe426f8",
@@ -102,7 +102,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Web Server"
+                  "text": "Reverse Proxy"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -116,8 +116,8 @@
                 "height": 80
               },
               "position": {
-                "x": 329,
-                "y": 487
+                "x": 382,
+                "y": 477
               },
               "angle": 0,
               "id": "1ae2bd24-c3dd-4029-acec-749e76485be5",
@@ -305,10 +305,6 @@
               },
               "vertices": [
                 {
-                  "x": 373,
-                  "y": 396
-                },
-                {
                   "x": 385,
                   "y": 361
                 }
@@ -373,10 +369,6 @@
                 {
                   "x": 436,
                   "y": 367
-                },
-                {
-                  "x": 446,
-                  "y": 413
                 }
               ],
               "id": "d0222cc7-91fd-4872-929b-4dcc62bdc8d1",
@@ -434,31 +426,6 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 342,
-                "y": 193
-              },
-              "target": {
-                "x": 545,
-                "y": 228
-              },
-              "vertices": [
-                {
-                  "x": 292,
-                  "y": 342
-                },
-                {
-                  "x": 474,
-                  "y": 337
-                }
-              ],
-              "id": "f369d83f-7891-44b6-abb2-1f0bc8b693f5",
-              "z": 11,
-              "attrs": {}
-            },
-            {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
                 "x": 236,
                 "y": 476
               },
@@ -483,8 +450,8 @@
                 "height": 80
               },
               "position": {
-                "x": 48,
-                "y": 490
+                "x": 38,
+                "y": 600
               },
               "angle": 0,
               "id": "55064d4e-6b9d-4fc3-bd34-fd5c990c86a6",
@@ -558,14 +525,18 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 10,
-                "y": 485
+                "x": 8,
+                "y": 591
               },
               "target": {
-                "x": 266,
-                "y": 512
+                "x": 227,
+                "y": 586
               },
               "vertices": [
+                {
+                  "x": 27,
+                  "y": 520
+                },
                 {
                   "x": 142,
                   "y": 430
@@ -574,11 +545,63 @@
               "id": "d7dde80d-1280-4ed8-9ea8-17dec10500de",
               "z": 15,
               "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 417,
+                "y": 196
+              },
+              "angle": 0,
+              "id": "2f10b2b4-0c17-4008-b676-ba31f64d849b",
+              "z": 16,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Firewall"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 84,
+                "y": 330
+              },
+              "angle": 0,
+              "id": "d49cbddf-4a27-4357-ba02-9cfb4942e4b2",
+              "z": 17,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Firewall"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
-          "height": 590,
+          "height": 2211,
           "width": 959
         }
       }
